@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Stile per il background dell'intera pagina */
+body {
+    background-image: url('img/foto.jpeg');
+}
+
+#header {
+    position: absolute; /* Posiziona l'header sopra l'immagine di sfondo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Spazio tra il logo e il menu */
+        align-items: center; /* Allinea verticalmente il logo e i link */
+        padding: 10px;
+        box-sizing: border-box; /* Include il padding nella larghezza totale */
+        z-index: 1; /* Assicura che l'header sia sopra la foto */
+        }
+
+#header img {
+    height: 50px; /* Imposta un'altezza appropriata per il logo */
+}
+
+.img2 img {
+    height: 80px; /* Altezza fissa per la copertina, puoi modificarla se necessario */
+    margin: 0 auto; /* Centro dell'immagine all'interno del suo div */
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.video {
+    position: relative; /* Fissa il video per coprire tutta la pagina */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Assicura che il video sia dietro l'header */
+    overflow: hidden; /* Assicura che il video non abbia barre di scorrimento */
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Rimuove il bordo dell'iframe */
+}
