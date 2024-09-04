@@ -1,3 +1,5 @@
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -31,17 +33,51 @@ body {
     height: 80px; /* Altezza fissa per la copertina, puoi modificarla se necessario */
     margin: 0 auto; /* Centro dell'immagine all'interno del suo div */
 }
-.menu {
+
+.menu-button {
+    width: 40px;
+    height: 40px;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent; /* Il pulsante ha uno sfondo trasparente */
+    border: none; /* Rimuove il bordo del pulsante */
 }
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+}
+
+.menu {
+    display: none; /* Nascondi il menu per impostazione predefinita */
+    position: absolute;
+    top: 60px; /* Sposta il menu sotto il pulsante */
+    right: 10px; /* Allinea il menu a destra */
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .menu a {
-    margin-right: 15px;
     text-decoration: none;
     color: white;
-    font-size: 24px;
-    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #444;
 }
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
 
 .video {
     position: relative; /* Fissa il video per coprire tutta la pagina */
