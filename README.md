@@ -1,2 +1,2 @@
 # BrokenQ
-Sito Web per i BrokenQ, utilizzo del Front-End (html, css, js).
+Sito Web per la band "Broken-Q" con utilizzo del Front-End (html, css, js).
